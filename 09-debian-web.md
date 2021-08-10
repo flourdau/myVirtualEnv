@@ -38,7 +38,7 @@ ___
 `sudo systemctl reload apache2`  
 `sudo emacs -nw /etc/php/7.3/apache2/php.ini`
 
-    memory_limit = 512
+    memory_limit = 512M
     display_errors = On
     post_max_size = 16M
     upload_max_filesize = 32M
