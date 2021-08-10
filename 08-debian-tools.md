@@ -15,7 +15,7 @@ ___
 `source ~/.bashrc`
 ___
 
-## TOR (optional)
+##  TOR (optional)
 `systemctl status tor@default.service`  
 `nano /etc/tor/torrc`
 

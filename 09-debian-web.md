@@ -2,10 +2,6 @@
 ![screenshot0](IMG/debian-logo.png)  
 ___
 
-#### PRE-REQUIS :
-- Droits Administrateur Debian
-___
-
 ##  Installation :
 `sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash - `  
 
@@ -51,11 +47,12 @@ ___
 
 ##  Adminer 4.8.1
 `cd ~/Documents/Adminer/public`  
-`wget https://www.adminer.org/latest.php`
+`wget https://www.adminer.org/latest.php`  
+`mv latest.php index.php`
 ___
 
 ##  NodeRED
-`bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)`
+`bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)`  
 `sudo systemctl enable nodered.service`
 ___
 

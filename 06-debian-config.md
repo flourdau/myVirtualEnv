@@ -8,7 +8,7 @@ ___
 ***Insérez l'ISO de Debian ou configurez une source mirroir***  
 `nano /etc/apt/sources.list`  
 
-***Commentez ou supprimer la ligne du CDROM Debian***  
+***Commentez ou supprimez la ligne du CDROM Debian***  
 
     # deb cdrom:[...]
 	deb http://deb.debian.org/debian/ buster main
@@ -47,7 +47,7 @@ ___
 ***...Retirer les additions aussi***
 ___
 ![screenshot00](IMG/06-debian-config/06.png)  
-***...Passez en mode pont***
+***...Passer en mode pont***
 ___
 ![screenshot00](IMG/06-debian-config/04.png)  
 ***On peut maintenant ajouter un dossier à partager***
@@ -55,7 +55,7 @@ ___
 ![screenshot00](IMG/06-debian-config/05.png)  
 ***Attention, juste nommer le partage (NOM_DOSSIER_PARTAGÉ_DANS_VIRTUALBOX) mais ne rien cocher***  
 ___
-***On peut maintenant relogger la VM***  
+***On relance la VM***  
 `mkdir ~/partage_vm`  
 `su -`  
 `nano /etc/fstab`
