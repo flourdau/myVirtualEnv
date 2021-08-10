@@ -2,10 +2,6 @@
 ![screenshot0](IMG/debian-logo.png)  
 ___
 
-#### PRE-REQUIS:
-- Droits Administrateur Debian
-___
-
 ##  SUDO
 ***ATTENTION À BIEN REMPLACER USERNAME IP-ADDRESS & PORT***❗❗❗  
 `su -`  

@@ -35,6 +35,7 @@ ___
 ___
 
 ## DOSSIER PARTAGÉ :
+***ATTENTION À BIEN REMPLACER USERNAME***❗❗❗  
 `usermod -aG vboxsf USERNAME`  
 `shutdown -h 0`  
 ![screenshot00](IMG/06-debian-config/01.png) 
