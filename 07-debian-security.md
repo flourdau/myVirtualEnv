@@ -31,7 +31,7 @@ ___
     Subsystem       sftp    /usr/lib/openssh/sftp-server
     PermitRootLogin no
     AllowUsers USERNAME
-`sudo systemctrl restart sshd.service`  
+`sudo systemctrl restart sshd`  
 ___
 
 ***Depuis la machine hote***  
@@ -50,6 +50,7 @@ ___
 
     PasswordAuthentication no
     UsePAM no
+`sudo systemctrl restart sshd`  
 
 ##  FAIL2BAN
 `sudo apt-get install -y fail2ban`  
