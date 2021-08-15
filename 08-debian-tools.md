@@ -3,14 +3,14 @@
 ___
 
 ##  TOOLS :
-`sudo apt-get install -y emacs25-nox git curl`
+`sudo apt-get install -y emacs-nox git curl`
 
     git config --global user.name "USERNAME"
     git config --global user.email "EMAIL"
     git config --global color.ui auto
 ___
 
-##  BASH
+##  BASH :
 `emacs -nw ~/.upDate`
 
     _IP=$(hostname -I) || true
@@ -40,7 +40,18 @@ ___
 `source ~/.bashrc`
 ___
 
-##  TOR (optional)
+##  GNOME :
+`sudo apt-get install -y gnome vlc`  
+___
+
+##  CODIUM :
+`wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg`  
+`echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list`  
+`sudo apt update`  
+`sudo apt install codium`  
+___
+
+##  TOR : (optional)
 `sudo apt-get install -y tor`  
 `sudo systemctl status tor@default.service`  
 `sudo emacs -nw  /etc/tor/torrc`
@@ -54,4 +65,3 @@ ___
 
 ![screenshot01](IMG/08-debian-tools/01.png)  
 ***Paramètre dans Firefox de l'Host -> Paramètre réseau (tout en bas)***  
-
