@@ -11,12 +11,12 @@ ___
 ***Commentez ou supprimez la ligne du CDROM Debian***  
 
     # deb cdrom:[...]
-	deb http://deb.debian.org/debian/ buster main
-	deb-src http://deb.debian.org/debian/ buster main
-	deb http://security.debian.org/debian-security buster/updates main contrib
-	deb-src http://security.debian.org/debian-security buster/updates main contrib
-	deb http://deb.debian.org/debian/ buster-updates main contrib
-	deb-src http://deb.debian.org/debian/ buster-updates main contrib
+	deb http://deb.debian.org/debian/ bullseye main
+	deb-src http://deb.debian.org/debian/ bullseye main
+	deb http://security.debian.org/debian-security bullseye-security main contrib
+	deb-src http://security.debian.org/debian-security bullseye-security main contrib
+	deb http://deb.debian.org/debian/ bullseye-updates main contrib
+	deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
 `apt-get update -y && apt-get dist-upgrade -y`   
 `apt-get install -y dkms build-essential module-assistant`  
 ___
