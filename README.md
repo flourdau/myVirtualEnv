@@ -16,7 +16,7 @@
     VirtualBox 6.1.26
 ### Machine Virtuelle :
     
-    Debian 10.10
+    Debian 11
     1CPU
     4096Mo RAM
     NO-GUI
