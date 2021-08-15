@@ -7,12 +7,30 @@ ___
 ___
 
 ##  BASH
+`emacs -nw ~/.upDate`
+
+    _IP=$(hostname -I) || true
+    printf "\nYo! Nous somme le :\n"
+    date
+    uptime -p
+    if [ "$_IP" ]; then
+    printf "\nLocal IP Address : %s\n\n" "$_IP"
+    fi
+    sudo apt-get update -y
+    sudo apt-get dist-upgrade -y
+    sudo apt-get autoclean -y
+    printf "\nUpdate! :)\n"
+    exit 0
+___
+
 `nano .bash_aliases`
 
     alias cls="clear;ls"
     alias clsa="clear;ls -lshaG"
     alias Rfresh="source ~/.bashrc"
+    alias !up="sudo sh ~/.upDate"
 `source ~/.bashrc`
+
 ___
 
 ##  TOR (optional)

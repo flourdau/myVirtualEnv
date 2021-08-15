@@ -23,7 +23,7 @@ ___
         </Directory>
     </VirtualHost> 
 
-`mkdir -p Documents/Adminer`  
+`mkdir -p Documents/Adminer/public`  
 `sudo ln -s ~/Documents/Adminer /var/www/Adminer`  
 `sudo a2ensite 000-Adminer.conf`  
 `sudo systemctl reload apache2`  
