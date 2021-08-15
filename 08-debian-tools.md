@@ -4,6 +4,10 @@ ___
 
 ##  TOOLS :
 `sudo apt-get install -y emacs25-nox git curl`
+
+    git config --global user.name "USERNAME"
+    git config --global user.email "EMAIL"
+    git config --global color.ui auto
 ___
 
 ##  BASH
@@ -38,16 +42,16 @@ ___
 
 ##  TOR (optional)
 `sudo apt-get install -y tor`  
-`systemctl status tor@default.service`  
-`emacs -nw  /etc/tor/torrc`
+`sudo systemctl status tor@default.service`  
+`sudo emacs -nw  /etc/tor/torrc`
 
     SocksPort ADRESSE_IP_SERVER:9050
     SocksPolicy accept 192.168.0.0/16
     RunAsDaemon 1
     DataDirectory /var/lib/tor
 
-`systemctl restart tor@default.service`
+`sudo systemctl restart tor@default.service`
 
-***Options dans Firefox de l'Host -> Paramètre réseau (tout en bas)***  
+![screenshot01](IMG/08-debian-tools/01.png)  
+***Paramètre dans Firefox de l'Host -> Paramètre réseau (tout en bas)***  
 
-    Hôte SOCKS : ADRESSE_IP_SERVER Port:9050
