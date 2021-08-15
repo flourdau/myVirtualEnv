@@ -4,7 +4,7 @@ ___
 
 #### PRE-REQUIS:
 - Droits utilisateurs Windows 10
-- Download le 1er ISO-DVD de [Debian 10.10.0](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/ "Debian 10")
+- Download le 1er ISO-DVD de [Debian 11](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-11.0.0-amd64-DVD-1.iso "Debian 11")
 ___
 
 ![screenshot2](IMG/04-machine-config/01.png) 
