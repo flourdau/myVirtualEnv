@@ -17,5 +17,5 @@ ___
 `sudo apt-get -y install cmatrix`
 ___
 
-### N'hésitez pas à importer & créer vos variante! : )  
+### N'hésitez pas à importer & créer vos variantes! : )  
 ![screenshot0](IMG/10-debian-fun/00.png)
