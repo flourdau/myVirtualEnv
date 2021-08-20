@@ -3,7 +3,7 @@
 ___
 
 ### Welcome
-`sudo nano /etc/motd`
+`sudo emacs -nw /etc/motd`
 
     Bienvenue!                           
 
