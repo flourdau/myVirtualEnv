@@ -8,7 +8,8 @@
 06. [Configuration](./06-debian-config.md "06-debian-config.md")  
 07. [Securité](./07-debian-security.md "07-debian-security.md")  
 08. [Outils](./08-debian-tools.md "08-debian-tools.md")  
-09. [Web](./09-debian-web.md "08-debian-web.md")  
+09. [Web](./09-debian-web.md "09-debian-web.md")  
+10. [Web](./10-debian-fun.md "10-debian-fun.md")  
 
 ### Hôte :  
 
