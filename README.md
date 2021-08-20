@@ -4,7 +4,7 @@
 02. [Configuration](./02-vbox-config.md "02-vbox-config.md")  
 03. [Création d'une Machine Virtuelle](./03-machine-create.md "03-machine-create.md")  
 04. [Configuration](./04-machine-config.md "04-machine-config.md")  
-05. [Installation de Debian 10](./05-debian-install.md "05-debian-install.md")  
+05. [Installation de Debian 11](./05-debian-install.md "05-debian-install.md")  
 06. [Configuration](./06-debian-config.md "06-debian-config.md")  
 07. [Securité](./07-debian-security.md "07-debian-security.md")  
 08. [Outils](./08-debian-tools.md "08-debian-tools.md")  

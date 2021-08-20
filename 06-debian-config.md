@@ -2,53 +2,34 @@
 ![screenshot0](IMG/debian-logo.png)  
 ___
 
-## APT:
+### Dependances:
 `su -`  
-
-***Insérez l'ISO de Debian ou configurez une source mirroir***  
-`nano /etc/apt/sources.list`  
-
-***Commentez ou supprimez la ligne du CDROM Debian***  
-
-    # deb cdrom:[...]
-	deb http://deb.debian.org/debian/ bullseye main
-	deb-src http://deb.debian.org/debian/ bullseye main
-	deb http://security.debian.org/debian-security bullseye-security main contrib
-	deb-src http://security.debian.org/debian-security bullseye-security main contrib
-	deb http://deb.debian.org/debian/ bullseye-updates main contrib
-	deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
-`apt-get update -y && apt-get dist-upgrade -y`   
-`apt-get install -y dkms build-essential module-assistant`  
+![screenshot00a](IMG/06-debian-config/00a.png)  
+***Insérez l'ISO de Debian***  
+`apt-get install -y dkms build-essential`  
+`eject`
 ___
 
-## ADDITIONS :
+### Additions :
 ***Cliquez sur :***  
 ![screenshot00](IMG/06-debian-config/00.png)  
 ___
 ***Si GUI (Interface Graphique)***  
 ***Patientez & fermez la pop-up qui s'affiche***  
 `sh /media/cdrom0/VBoxLinux*.run`  
-***Si no GUI***  
-`mkdir ~/cdrom0`  
-`mount /dev/sr0 ~/cdrom0`  
-`sh ~/cdrom0/VBoxLinux*.run`
-___
+***Si no GUI***   
+`mount /dev/sr0 /media/cdrom0`  
+`sh /media/cdrom0/VBoxLinux*.run`  
+`eject`  
 
-## DOSSIER PARTAGÉ :
+### Dossiers partagés :
 ***ATTENTION À BIEN REMPLACER USERNAME***❗❗❗  
 `usermod -aG vboxsf USERNAME`  
 `shutdown -h 0`  
 ![screenshot00](IMG/06-debian-config/01.png) 
 ___
-
 ![screenshot00](IMG/06-debian-config/02.png)  
 ***On en profite pour activer le copier-coller...***
-___
-![screenshot00](IMG/06-debian-config/03.png)  
-***...Retirer les additions aussi***
-___
-![screenshot00](IMG/06-debian-config/06.png)  
-***...Passer en mode pont***
 ___
 ![screenshot00](IMG/06-debian-config/04.png)  
 ***On peut maintenant ajouter un dossier à partager***
@@ -63,3 +44,6 @@ ___
 
 	NOM_DOSSIER_PARTAGÉ_DANS_VIRTUALBOX	/home/USERNAME/partage_vm	vboxsf	defaults	0	0
 ***Ajoutez la ligne, attention aux tabulations!***
+___
+###	Pensez à exporter!
+![screenshot85](IMG/05-debian-install/85.png)  

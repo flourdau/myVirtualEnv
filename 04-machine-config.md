@@ -16,3 +16,6 @@ ___
 ***On insére virtuellement l'iso dans le lecteur de la machine...***
 ___
 ![screenshot4](IMG/04-machine-config/04.png)  
+___
+![screenshot5](IMG/04-machine-config/05.png)  
+***Accés par pont & cable débranché pour le moment...***
