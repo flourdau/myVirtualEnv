@@ -138,27 +138,12 @@ ___
 `sudo systemctrl status fail2ban.service`  
 `sudo systemctrl status nftables.service`    
 `ip a`    
-
-nano ~/.upDate
-
-    printf "\nBonjour! Nous somme le :\n"
-    date
-    uptime -p
-
-    sudo apt-get update -y
-    sudo apt-get dist-upgrade -y
-    sudo apt-get autoclean -y
-    printf "\nUpdate! :)\n"
-
-    exit 0
-`chmod 100 .upDate`  
-`sudo ~/.update`
 ___
 
 ***On peut maintenant finir la config de SSH***
 ### Connection SSH
 `mkdir .ssh`  
-***Depuis la machine hote***  
+***Depuis la machine hôte***  
 `ssh-keygen`  
 
 !!! UNIX!!!  
@@ -167,13 +152,31 @@ ___
 `scp.exe -PPORT .\.ssh\id_rsa.pub USERNAME@IP-ADDRESS:~/.ssh/authorized_keys`  
   
 `ssh -pPORT <USERNAME>@<IP-ADDRESS>`  
-___
+
 ***Retour sous Debian***  
 `sudo nano /etc/ssh/sshd_config`  
 
     PasswordAuthentication no
     UsePAM no
 `sudo systemctrl restart sshd`  
+___
+
+### UoDate!
+`nano ~/.upDate`
+
+    printf "\nBonjour! Nous somme le :\n"
+    date
+    uptime -p
+
+    apt-get update -y
+    apt-get dist-upgrade -y
+    apt-get autoclean -y
+    printf "\nUpdate! :)\n"
+
+    exit 0
+`chmod 100 .upDate`  
+`sudo ~/.update`  
+`sudo shutdown -h 0`
 ___
 
 ###	Pensez à exporter!

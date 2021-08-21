@@ -2,11 +2,10 @@
 ![screenshot0](IMG/debian-logo.png)  
 ___
 
-###  Installation :
+###  Installation
 `sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash - `  
 
 `sudo tasksel`  
-
 ![screenshot0](IMG/09-debian-web/00.png)  
 
 `sudo apt-get -y install nodejs libapache2-mod-php7.4 mariadb-server mariadb-client librabbitmq-dev composer php7.4 php7.4-{apcu,amqp,bcmath,bz2,common,cli,curl,dev,fpm,gd,intl,mbstring,mysql,opcache,readline,redis,xdebug,xml,yaml,zip}`  

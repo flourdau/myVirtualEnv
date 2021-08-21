@@ -2,7 +2,7 @@
 ![screenshot0](IMG/debian-logo.png)  
 ___
 
-###  Tools :
+###  Tools
 `sudo apt-get install -y emacs-nox git curl`
 
     git config --global user.name "USERNAME"
@@ -11,7 +11,7 @@ ___
 ___
 
 
-###  Aliases :
+###  Aliases
 `emacs -nw  .bash_aliases`
 
     alias cls="clear;ls"
@@ -21,18 +21,19 @@ ___
 ___
 
 ##  ⚠ OPTIONAL! ⚠
+___
 ### GUI
 `sudo tasksel`  
-![screenshot00](IMG/08-debian-tools/00.png)
-***Assez lourd attention...***  
-***Au prochain boot pensez à up la machine si possible, nombre de processeurs, mémoire vidéo...***
+![screenshot00](IMG/08-debian-tools/00.png)  
+***Assez gourmand en ressource attention mais Xfce est un bon compromis...***  
+***Au prochain boot pensez à up la machine si possible: nombre de processeurs, mémoire vidéo...***
 ___
 
-### VLC :
+### VLC
 `sudo apt-get install -y vlc`  
 ___
 
-###  Visual Studio Codium :
+###  Visual Studio Codium
 `wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg`  
 
 `echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list`  
@@ -41,7 +42,7 @@ ___
 `sudo apt install codium`  
 ___
 
-###  YouTube-Dl :
+###  YouTube-Dl
 `sudo apt-get install ffmpeg python3-pip`  
 `sudo pip install youtube-dl`  
 `sudo pip install --upgrade youtube-dl`  
@@ -51,7 +52,7 @@ ___
 `youtube-dl -kf '(bestvideo+bestaudio/best)' <lien yt>` # Best Quality + no delete source -k
 ___
 
-###  TOR :
+###  TOR
 `sudo apt-get install -y tor`  
 `sudo systemctl status tor@default.service`  
 `sudo emacs -nw /etc/tor/torrc`
