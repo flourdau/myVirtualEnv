@@ -17,7 +17,6 @@ ___
 ![screenshot04b](IMG/05-debian-install/04b.png)  
 ___
 ![screenshot05](IMG/05-debian-install/05.png)  
-***⚠ C'est à la fin de la création de ce tuto que je m'apperçois que SERVER comme nom de machine n'était pas une bonne idée... ...REMPLACER par*** `VIRTUALSERVER ❗❗❗`
 ___
 ![screenshot06](IMG/05-debian-install/06.png)  
 ___
@@ -132,7 +131,6 @@ ___
 ___
 ![screenshot59](IMG/05-debian-install/59.png)  
 ___
-
 ![screenshot61](IMG/05-debian-install/61.png)  
 ___
 ![screenshot62](IMG/05-debian-install/62.png)  

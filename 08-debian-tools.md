@@ -14,9 +14,10 @@ ___
 ###  Aliases
 `emacs -nw  .bash_aliases`
 
+    alias Rfresh="source ~/.bashrc"
     alias cls="clear;ls"
     alias clsa="clear;ls -lshaG"
-    alias Rfresh="source ~/.bashrc"
+    alias Doc="cd ~/Documents/;clsa"
 `source ~/.bashrc`
 ___
 
