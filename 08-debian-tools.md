@@ -3,11 +3,15 @@
 ___
 
 ###  Tools
-`sudo apt-get install -y emacs-nox git curl`
+`sudo apt-get install -y htop emacs-nox git curl`
 
     git config --global user.name "USERNAME"
     git config --global user.email "EMAIL"
     git config --global color.ui auto
+`ssh-keygen -t ed25519 -C "your_email@example.com"`  
+`eval "$(ssh-agent -s)"`  
+`ssh-add ~/.ssh/id_ed25519`   
+***Et Collez le contenu sur GitHub.com...***
 ___
 
 
@@ -17,7 +21,7 @@ ___
     alias Rfresh="source ~/.bashrc"
     alias cls="clear;ls"
     alias clsa="clear;ls -lshaG"
-    alias Doc="cd ~/Documents/;clsa"
+    alias doc="cd ~/Documents/;clsa"
 `source ~/.bashrc`
 ___
 

@@ -5,7 +5,13 @@ ___
 ### Welcome
 `sudo emacs -nw /etc/motd`
 
-    Bienvenue!                           
+    Bienvenue sur : 
+    
+     ##  ###  ##   # #  ###  ##    # 
+    #    #    # #  # #  #    # #   # 
+     #   ##   ##   # #  ##   ##    # 
+      #  #    # #  # #  #    # #     
+    ##   ###  # #   #   ###  # #   #                            
 
 ___
 
