@@ -11,7 +11,8 @@ ___
 `ssh-keygen -t ed25519 -C "your_email@example.com"`  
 `eval "$(ssh-agent -s)"`  
 `ssh-add ~/.ssh/id_ed25519`   
-***Et Collez le contenu sur GitHub.com...***
+`ssh -T git@github.com`  
+***Et Collez le contenu sur GitHub.com... (.pub)***
 ___
 
 
