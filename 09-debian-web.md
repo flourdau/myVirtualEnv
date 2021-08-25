@@ -28,8 +28,7 @@ ___
 ###  Apache 2
 `sudo emacs -nw /etc/apache2/sites-available/000-Adminer.conf`
 
-    Listen 8080
-    <VirtualHost *:8080>
+    Listen 8001
         ServerAdmin USERNAME@localhost
         ServerName Adminer
         DocumentRoot /var/www/Adminer/public/
@@ -58,6 +57,42 @@ ___
 `bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)`  
 `sudo systemctl start nodered.service`  
 `sudo systemctl enable nodered.service`
+___
+
+### Symfony
+`wget https://get.symfony.com/cli/installer -O - | bash`  
+`symfony check:requirements`
+___
+
+##  Docker
+### Engine
+`sudo apt-get install apt-transport-https ca-certificates gnupg lsb-release`  
+`curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`  
+`echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`  
+`sudo apt-get update`  
+`sudo apt-get install docker-ce docker-ce-cli containerd.io`
+___
+
+### Compose
+`sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`  
+`sudo chmod +x /usr/local/bin/docker-compose`  
+#### Upgrade
+`docker-compose migrate-to-labels`
+___
+
+### Command-line completion
+`sudo curl -L https://raw.githubusercontent.com/docker/compose/1.29.2/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose`
+___
+
+### Mariadb
+`sudo mysql -u root -p -h localhost`
+
+    CREATE DATABASE projettest_db;
+    GRANT ALL ON projettest_db .* TO 'flo_adm'@'localhost' identified by 'TEST1234' WITH GRANT OPTION;
+    GRANT CREATE ON *.* to 'flo_adm'@'localhost';
+    FLUSH PRIVILEGES;
+    exit
+`sudo systemctl restart mariadb.service`
 ___
 
 ###	Pensez à exporter!

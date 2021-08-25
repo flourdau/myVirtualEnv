@@ -60,7 +60,7 @@ ___
 
             tcp dport ipp accept comment "Accept IPP/IPPS on port 631"
 
-            tcp dport { http, https, 8008, 8080, 1880 } accept comment "Accept HTTP (ports 80, 443, 8008, 8080, 1880)"
+            tcp dport { http, https, 8000, 8001, 8008, 8080, 1880 } accept comment "Accept HTTP (ports 80, 443, 8000, 8001, 8008, 8080, 1880)"
 
             udp sport bootpc udp dport bootps ip saddr 0.0.0.0 ip daddr 255.255.255.255 accept comment "Accept DHCPDISCOVER (for DHCP-Proxy)"
         }
