@@ -84,6 +84,11 @@ ___
 `sudo curl -L https://raw.githubusercontent.com/docker/compose/1.29.2/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose`
 ___
 
+### Add groupe 'Docker'
+`sudo usermod -aG docker $USER`  
+`newgrp docker`
+___
+
 ### Mariadb
 `sudo mysql -u root -p -h localhost`
 
