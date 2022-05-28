@@ -7,14 +7,14 @@
 05. [Installation de Debian 11](./05-debian-install.md "05-debian-install.md")  
 06. [Configuration](./06-debian-config.md "06-debian-config.md")  
 07. [Securité](./07-debian-security.md "07-debian-security.md")  
-08. [Outils](./08-debian-tools.md "08-debian-tools.md")  
+08. [Graphical User Interface](./08-debian-GUI.md "08-debian-tools.md")  
 09. [Web](./09-debian-web.md "09-debian-web.md")  
 10. [Fun](./10-debian-fun.md "10-debian-fun.md")  
 
 ### Hôte :  
 
-    Windows 10 Home 21H1
-    VirtualBox 6.1.26
+    Windows 10 Home 21H2
+    VirtualBox 6.1.34
 ### Machine Virtuelle :
     
     Debian 11

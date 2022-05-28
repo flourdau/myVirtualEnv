@@ -1,6 +1,26 @@
 #   DEBIAN-FUN
 ![screenshot0](IMG/debian-logo.png)  
+
 ___
+
+### Aliases
+`emacs -nw  .bash_aliases`
+
+    alias Rfresh="source ~/.bashrc"
+    alias cls="clear;ls"
+    alias clsa="clear;ls -lshaG"
+    alias doc="cd ~/Documents/;clsa"
+`source ~/.bashrc`
+___
+
+###  YouTube-Dl
+`sudo apt-get install ffmpeg python3-pip`  
+`sudo pip install youtube-dl`  
+`sudo pip install --upgrade youtube-dl`  
+
+`youtube-dl -F <lien yt>` # Affiche toutes les qualités dispo  
+`youtube-dl -f137+251 <lien yt>` # Fusionne la video(137) avec le son (251)  
+`youtube-dl -kf '(bestvideo+bestaudio/best)' <lien yt>` # Best Quality + no delete source -k
 
 ### Hostname
 `sudo emacs -nw /etc/hostname`

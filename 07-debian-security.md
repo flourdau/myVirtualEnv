@@ -9,77 +9,40 @@ ___
 `apt-get install -y fail2ban network-manager`  
 
 ### NFTABLES
+`cp -Rpv /etc/nftables.conf /etc/nftables.conf.ORI`
+`cp -Rpv /usr/share/doc/nftables/examples/workstation.nft /etc/nftables.conf`  
 `nano /etc/nftables.conf`
+
+    #!/usr/sbin/nft -f
 
     flush ruleset
 
-    table inet my_table {
-        set LANv4 {
-            type ipv4_addr
-            flags interval
+    table inet filter {
+        chain input {
+            type filter hook input priority 0;
 
-            elements = { 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, 169.254.0.0/16 }
+            # accept any localhost traffic
+            iif lo accept
+
+            # accept traffic originated from us
+            ct state established,related accept
+
+            # activate the following line to accept common local services
+            tcp dport { 22, 80, 443 } ct state new accept
+
+            # accept neighbour discovery otherwise IPv6 connectivity breaks.
+            # ip6 nexthdr icmpv6 icmpv6 type { nd-neighbor-solicit,  nd-router-advert, nd-neighbor-advert } accept
+
+            icmp type echo-request accept
+
+            # count and drop any other traffic
+            counter drop
         }
-        set LANv6 {
-            type ipv6_addr
-            flags interval
-
-            elements = { fd00::/8, fe80::/10 }
-        }
-
-        chain my_input_lan {
-            meta l4proto { tcp, udp } th dport 2049 accept comment "Accept NFS"
-
-            udp dport netbios-ns accept comment "Accept NetBIOS Name Service (nmbd)"
-            udp dport netbios-dgm accept comment "Accept NetBIOS Datagram Service (nmbd)"
-            tcp dport netbios-ssn accept comment "Accept NetBIOS Session Service (smbd)"
-            tcp dport microsoft-ds accept comment "Accept Microsoft Directory Service (smbd)"
-
-            udp sport { bootpc, 4011 } udp dport { bootps, 4011 } accept comment "Accept PXE"
-            udp dport tftp accept comment "Accept TFTP"
-        }
-
-        chain my_input {
-            type filter hook input priority filter; policy drop;
-
-            iif lo accept comment "Accept any localhost traffic"
-            ct state invalid drop comment "Drop invalid connections"
-            ct state established,related accept comment "Accept traffic originated from us"
-
-            meta l4proto ipv6-icmp icmpv6 type { destination-unreachable, packet-too-big, time-exceeded, parameter-problem, mld-listener-query, mld-listener-report, mld-listener-reduction, nd-router-solicit, nd-router-advert, nd-neighbor-solicit, nd-neighbor-advert, ind-neighbor-solicit, ind-neighbor-advert, mld2-listener-report } accept comment "Accept ICMPv6"
-            meta l4proto icmp icmp type { destination-unreachable, router-solicitation, router-advertisement, time-exceeded, parameter-problem } accept comment "Accept ICMP"
-            ip protocol igmp accept comment "Accept IGMP"
-
-            udp dport mdns ip6 daddr ff02::fb accept comment "Accept mDNS"
-            udp dport mdns ip daddr 224.0.0.251 accept comment "Accept mDNS"
-
-            ip6 saddr @LANv6 jump my_input_lan comment "Connections from private IP address ranges"
-            ip saddr @LANv4 jump my_input_lan comment "Connections from private IP address ranges"
-
-            tcp dport ssh accept comment "Accept SSH on port 22"
-
-            tcp dport ipp accept comment "Accept IPP/IPPS on port 631"
-
-            tcp dport { http, https, 8000, 8001, 8008, 8080, 1880 } accept comment "Accept HTTP (ports 80, 443, 8000, 8001, 8008, 8080, 1880)"
-
-            udp sport bootpc udp dport bootps ip saddr 0.0.0.0 ip daddr 255.255.255.255 accept comment "Accept DHCPDISCOVER (for DHCP-Proxy)"
-        }
-
-        chain my_forward {
-            type filter hook forward priority filter; policy drop;
-            # Drop everything forwarded to us. We do not forward. That is routers job.
-        }
-
-        chain my_output {
-            type filter hook output priority filter; policy accept;
-            # Accept every outbound connection
-        }
-
     }
 
-`systemctrl enable nftables.service`  
-`systemctrl start nftables.service`  
-`systemctrl status nftables.service`  
+`systemctl enable nftables.service`  
+`systemctl start nftables.service`  
+`systemctl status nftables.service`  
 `nft list ruleset`
 ___
 
@@ -117,6 +80,17 @@ __
 ***Préférez le port 22 car nftables bloque...***
 ___
 
+### Fail2Ban
+`sudo nano /etc/fail2ban/jail.d/defaults-debian.conf`
+
+    [sshd]
+    enabled = true
+    banaction = nftables-multiport
+    banaction_allports = nftables-allports
+`sudo systemctrl restart fail2ban.service`
+`fail2ban-client status`
+___
+
 ### APT
 `nano /etc/apt/sources.list`  
 
@@ -135,8 +109,8 @@ ___
 ![screenshot01](IMG/07-debian-security/01.png)  
 `eject`  
 `reboot`  
-`sudo systemctrl status fail2ban.service`  
-`sudo systemctrl status nftables.service`    
+`sudo systemctl status fail2ban.service`  
+`sudo systemctl status nftables.service`    
 `ip a`    
 ___
 
@@ -158,10 +132,10 @@ ___
 
     PasswordAuthentication no
     UsePAM no
-`sudo systemctrl restart sshd`  
+`sudo systemctl restart sshd`  
 ___
 
-### UoDate!
+### UpDate!
 `nano ~/.upDate`
 
     printf "\nBonjour! Nous somme le :\n"
@@ -175,7 +149,7 @@ ___
 
     exit 0
 `chmod 100 .upDate`  
-`sudo ~/.update`  
+`sudo ~/.upDate`  
 `sudo shutdown -h 0`
 ___
 
