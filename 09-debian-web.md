@@ -1,3 +1,7 @@
+|             |             |               |
+| :---        |    :----:   |          ---: |
+| [Previous](08-debian-GUI.md)     |--------------------------------------------------------------------------------------| [Next](10-debian-fun.md)   |
+
 #   DEBIAN-WEB
 ![screenshot0](IMG/debian-logo.png)  
 ___
@@ -41,6 +45,25 @@ ___
     upload_max_filesize = 64M
 `sudo systemctl restart apache2`  
 ___
+
+### PHP 8.1.7 Compilation (Testing)
+`su -`  
+`mkdir -p ~/COMPILATION/APACHE2`  
+`cd COMPILATION/APACHE2`  
+`wget https://dlcdn.apache.org/httpd/httpd-2.4.54.tar.gz`  
+`tar -xzf httpd-2.4.54.tar.gz`  
+`cd httpd-2.4.54/`  
+`sudo apt-get install libapr1-dev libaprutil1-dev libpcre3-dev pkg-config libxml2-dev sqlite3 libsqlite3-dev zlib1g-dev`  
+`./configure --enable-so`  
+`make`  
+`make install`  
+
+`wget https://www.php.net/distributions/php-8.1.7.tar.gz`  
+`tar -xzf php-8.1.7.tar.gz`  
+`cd PHP8.1.7`  
+`./configure --with-apxs2=/usr/local/apache2/bin/apxs --with-pdo-mysql`  
+
+
 
 ###  Apache 2
 `sudo emacs -nw /etc/apache2/sites-available/000-Adminer.conf`
@@ -101,26 +124,36 @@ ___
 
 ##  Docker
 ### Engine
-`sudo apt-get install apt-transport-https ca-certificates gnupg lsb-release`  
-`curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`  
-`echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`  
 `sudo apt-get update`  
-`sudo apt-get install docker-ce docker-ce-cli containerd.io`
+`sudo apt-get install ca-certificates curl gnupg lsb-release`  
+`sudo mkdir -p /etc/apt/keyrings`  
+`curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`  
+`echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.` `list.d/docker.list > /dev/null` 
+`sudo apt-get update`  
+`sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin`  
 ___
 
-### Compose
-`sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`  
-`sudo chmod +x /usr/local/bin/docker-compose`  
+## Docker compose
+`wget https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64`  
+`chmod +x docker-compose-linux-x86_64`  
+`sudo mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose`  
 ___
 
-### Command-line completion
-`sudo curl -L https://raw.githubusercontent.com/docker/compose/1.29.2/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose`
+## Command Line completion
+`cd /etc/bash_completion.d/` 
+`sudo curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose` 
+`source /etc/bash_completion.d/docker-compose` 
 ___
 
-### Add groupe 'Docker'
-`sudo usermod -aG docker $USER`  
-`newgrp docker`
-___
+#### Commandes utiles
+`docker images (liste les images téléchargées)` 
+`docker ps (liste les conteneurs en cours de process)` 
+`docker run -it -d hello-world (lance l'image hello-world en iteractive et detaché)` 
+`docker stop ID` 
+`docker pull hello-world (reccupère une image sur le docker-hub)`  
+`docker system prune (Delete toutes les images téléchargées, les docker non utilisés, les réseaux docker et le cache)`  
+`docker build -t mon_image . (construit l'image en la renommant 'mon_image' dans le dossier courant)`  
+`docker search nginx`  
 
 ###	Pensez à exporter!
 `sudo shutdown -h 0`  
@@ -145,3 +178,8 @@ ___
 ___
 ###	Pensez à exporter!
 ![screenshot85](IMG/05-debian-install/85.png)
+
+
+|             |             |               |
+| :---        |    :----:   |          ---: |
+| [Previous](08-debian-GUI.md)     |--------------------------------------------------------------------------------------| [Next](10-debian-fun.md)   |
