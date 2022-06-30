@@ -1,3 +1,8 @@
+|             |             |               |
+| :---        |    :----:   |          ---: |
+| [Previous](05-debian-install.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](07-debian-security.md)   |
+|             |             |               |
+
 #   DEBIAN-CONFIG
 ![screenshot0](IMG/debian-logo.png)  
 ___
@@ -52,4 +57,11 @@ ___
 ___
 
 ###	Pensez à exporter!
-![screenshot85](IMG/05-debian-install/85.png)  
+
+![screenshot85](IMG/05-debian-install/85.png)
+
+|             |             |               |
+| :---        |    :----:   |          ---: |
+| [Previous](05-debian-install.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](07-debian-security.md)   |
+|             |             |               |
+
