@@ -3,36 +3,36 @@
 | [Previous](09-debian-web.md)     |-----------------------------------------------------------------------------------------------------------------------------|    |
 |             |             |               |
 
-#   DEBIAN-FUN
+#   DEBIAN-FUN  
 ![screenshot0](IMG/debian-logo.png)  
+___  
 
-___
-
-### Aliases
-`emacs -nw  .bash_aliases`
+### Aliases  
+`emacs -nw  .bash_aliases`  
 
     alias Rfresh="source ~/.bashrc"
     alias cls="clear;ls"
     alias clsa="clear;ls -lshaG"
     alias doc="cd ~/Documents/;clsa"
-`source ~/.bashrc`
-___
 
-###  YouTube-Dl
+`source ~/.bashrc`  
+___  
+
+###  YouTube-Dl  
 `sudo apt-get install ffmpeg python3-pip`  
 `sudo pip install youtube-dl`  
 `sudo pip install --upgrade youtube-dl`  
 
 `youtube-dl -F <lien yt>` # Affiche toutes les qualités dispo  
 `youtube-dl -f137+251 <lien yt>` # Fusionne la video(137) avec le son (251)  
-`youtube-dl -kf '(bestvideo+bestaudio/best)' <lien yt>` # Best Quality + no delete source -k
+`youtube-dl -kf '(bestvideo+bestaudio/best)' <lien yt>` # Best Quality + no delete source -k  
 
-### Hostname
-`sudo emacs -nw /etc/hostname`
-___
+### Hostname  
+`sudo emacs -nw /etc/hostname`  
+___  
 
-### Welcome
-`sudo emacs -nw /etc/motd`
+### Welcome  
+`sudo emacs -nw /etc/motd`  
 
     Bienvenue sur : 
     
@@ -42,20 +42,20 @@ ___
       #  #    # #  # #  #    # #     
     ##   ###  # #   #   ###  # #   #                            
 
-___
+___  
 
-### Cmatrix
-`sudo apt-get -y install cmatrix`
-___
+### Cmatrix  
+`sudo apt-get -y install cmatrix`  
+___  
 
-### Terminal Windows 10
+### Terminal Windows 10  
 ***Installez l'application Terminal depuis le Store de Windows puis dans Paramètre***  
 
 ![screenshot01](IMG/10-debian-fun/01.png)  
 
 ***'Ouvrir le fichier JSON'***  
-***Ajoutez le bloc dans*** _profiles->list_    
-***& remplacez les champs*** _commandline, background, ico_    
+***Ajoutez le bloc dans*** _profiles->list_  
+***& remplacez les champs*** _commandline, background, ico_  
 
     {
         "guid": "{58ad8b0c-3ef4-5f4a-sc6f-43e789f2544}",
@@ -79,15 +79,16 @@ ___
         "startingDirectory" : "%USERPROFILE%/",
         "useAcrylic" : true 
     },
+
 ***Attention à backgroundImage & icon❗***  
 ***il correspond au dossier RoamingState situé un niveau au dessus de ce fichier JSON***  
 ***Si error d'SSH revoir la partie securité du tuto pour se connecter avec powershell...***  
 
-***Voilà maintenant en un click vous êtes log! : )***
-___
+***Voilà maintenant en un click vous êtes log! : )***  
+___  
 
 ### Et aussi n'hésitez pas à importer & créer vos variantes! : )  
-![screenshot0](IMG/10-debian-fun/00.png)
+![screenshot0](IMG/10-debian-fun/00.png)  
 
 |             |             |               |
 | :---        |    :----:   |          ---: |
