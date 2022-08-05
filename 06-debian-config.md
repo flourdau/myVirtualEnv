@@ -53,6 +53,7 @@ ___
 `nano /etc/fstab`  
 
 	NOM_DOSSIER_PARTAGÉ_DANS_VIRTUALBOX	/home/USERNAME/partage_vm	vboxsf	defaults	0	0  
+
 ***Ajoutez la ligne, attention aux tabulations!***  
 ___  
 
