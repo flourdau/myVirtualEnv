@@ -124,19 +124,19 @@ ___
 ___  
 
 ## Command Line completion  
-`cd /etc/bash_completion.d/` 
-`sudo curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose` 
-`source /etc/bash_completion.d/docker-compose` 
+`cd /etc/bash_completion.d/`  
+`sudo curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose`  
+`source /etc/bash_completion.d/docker-compose`  
 ___  
 
 #### Commandes utiles  
-`docker images (liste les images téléchargées)`  
-`docker ps (liste les conteneurs en cours de process)`  
-`docker run -it -d hello-world (lance l'image hello-world en iteractive et detaché)`  
+`docker images` (liste les images téléchargées)  
+`docker ps` (liste les conteneurs en cours de process)  
+`docker run -it -d hello-world` (lance l'image hello-world en iteractive et detaché)  
 `docker stop ID`  
-`docker pull hello-world (reccupère une image sur le docker-hub)`  
-`docker system prune (Delete toutes les images téléchargées, les docker non utilisés, les réseaux docker et le cache)`  
-`docker build -t mon_image . (construit l'image en la renommant 'mon_image' dans le dossier courant)`  
+`docker pull hello-world` (reccupère une image sur le docker-hub)  
+`docker system prune` (Delete toutes les images téléchargées, les docker non utilisés, les réseaux docker et le cache)  
+`docker build -t mon_image .` (construit l'image en la renommant 'mon_image' dans le dossier courant)  
 `docker search nginx`  
 
 ###	Pensez à exporter!  
@@ -160,6 +160,7 @@ ___
 ![screenshot01](IMG/08-debian-tools/01.png)  
 ***Paramètre dans Firefox de l'Host -> Paramètre réseau (tout en bas)***  
 ___  
+
 ###	Pensez à exporter!  
 ![screenshot85](IMG/05-debian-install/85.png)  
 
