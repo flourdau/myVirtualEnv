@@ -3,20 +3,20 @@
 | [Previous](06-debian-config.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](08-debian-GUI.md)   |
 |             |             |               |
 
-#   DEBIAN-SECURITY
+#   DEBIAN-SECURITY  
 ![screenshot0](IMG/debian-logo.png)  
-___
+___  
 
-### Fail2Ban & Network-Manager
+### Fail2Ban & Network-Manager  
 `su -`  
 ![screenshot00a](IMG/06-debian-config/00a.png)  
 ***Insérez l'ISO de Debian***  
 `apt-get install -y fail2ban network-manager`  
 
-### NFTABLES
-`cp -Rpv /etc/nftables.conf /etc/nftables.conf.ORI`
+### NFTABLES  
+`cp -Rpv /etc/nftables.conf /etc/nftables.conf.ORI`  
 `cp -Rpv /usr/share/doc/nftables/examples/workstation.nft /etc/nftables.conf`  
-`nano /etc/nftables.conf`
+`nano /etc/nftables.conf`  
 
     #!/usr/sbin/nft -f
 
@@ -48,30 +48,30 @@ ___
 `systemctl enable nftables.service`  
 `systemctl start nftables.service`  
 `systemctl status nftables.service`  
-`nft list ruleset`
-___
+`nft list ruleset`  
+___  
 
-### Sudo
+### Sudo  
 ***ATTENTION À BIEN REMPLACER USERNAME IP-ADDRESS & PORT***❗❗❗  
 `nano /etc/sudoers`  
 
     USERNAME ALL=(ALL:ALL) ALL
 
 ***On demande le mot de passe***  
-🛑***OU INVERSEMENT***❗❗
+🛑***OU INVERSEMENT***❗❗  
 
     USERNAME ALL=(ALL) NOPASSWD: ALL
 
 `exit`  
 `sudo touch toto.txt`  
 `sudo rm toto.txt`  
-***Voilà... ...USERNAME possède les droits...***
-__
+***Voilà... ...USERNAME possède les droits...***  
+__  
 
-### SSHD
+### SSHD  
 `sudo tasksel`  
 ![screenshot00](IMG/07-debian-security/00.png)  
-`sudo nano /etc/ssh/sshd_config`
+`sudo nano /etc/ssh/sshd_config`  
 
     Port PORT
     ChallengeResponseAuthentication no
@@ -82,21 +82,21 @@ __
     Subsystem       sftp    /usr/lib/openssh/sftp-server
     PermitRootLogin no
     AllowUsers USERNAME
-***Préférez le port 22 car nftables bloque...***
-___
+***Préférez le port 22 car nftables bloque...***  
+___  
 
-### Fail2Ban
-`sudo nano /etc/fail2ban/jail.d/defaults-debian.conf`
+### Fail2Ban  
+`sudo nano /etc/fail2ban/jail.d/defaults-debian.conf`  
 
     [sshd]
     enabled = true
     banaction = nftables-multiport
     banaction_allports = nftables-allports
-`sudo systemctrl restart fail2ban.service`
-`fail2ban-client status`
-___
+`sudo systemctrl restart fail2ban.service`  
+`fail2ban-client status`  
+___  
 
-### APT
+### APT  
 `nano /etc/apt/sources.list`  
 
 ***Commentez ou supprimez la ligne du CDROM Debian***  
@@ -108,19 +108,19 @@ ___
 	deb-src http://security.debian.org/debian-security bullseye-security main contrib
 	deb http://deb.debian.org/debian/ bullseye-updates main contrib
 	deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
-___
+___  
 
 ***On peut apparement rebrancher le câble....***  
 ![screenshot01](IMG/07-debian-security/01.png)  
 `eject`  
 `reboot`  
 `sudo systemctl status fail2ban.service`  
-`sudo systemctl status nftables.service`    
-`ip a`    
-___
+`sudo systemctl status nftables.service`  
+`ip a`  
+___  
 
-***On peut maintenant finir la config de SSH***
-### Connection SSH
+***On peut maintenant finir la config de SSH***  
+### Connection SSH  
 `mkdir .ssh`  
 ***Depuis la machine hôte***  
 `ssh-keygen`  
@@ -138,10 +138,10 @@ ___
     PasswordAuthentication no
     UsePAM no
 `sudo systemctl restart sshd`  
-___
+___  
 
-### UpDate!
-`nano ~/.upDate`
+### UpDate!  
+`nano ~/.upDate`  
 
     printf "\nBonjour! Nous somme le :\n"
     date
@@ -155,11 +155,11 @@ ___
     exit 0
 `chmod 100 .upDate`  
 `sudo ~/.upDate`  
-`sudo shutdown -h 0`
-___
+`sudo shutdown -h 0`  
+___  
 
-###	Pensez à exporter!
-![screenshot85](IMG/05-debian-install/85.png)
+###	Pensez à exporter!  
+![screenshot85](IMG/05-debian-install/85.png)  
 
 |             |             |               |
 | :---        |    :----:   |          ---: |

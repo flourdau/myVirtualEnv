@@ -3,30 +3,30 @@
 | [Previous](02-vbox-config.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](04-machine-config.md)   |
 |             |             |               |
 
-# MACHINE-CREATE
+# MACHINE-CREATE  
 ![screenshot0](IMG/vbox-logo.png)  
-___
+___  
 
-#### PRE-REQUIS:
-- Droits utilisateurs Windows 10
-___
+#### PRE-REQUIS:  
+- Droits utilisateurs Windows 10  
+___  
 
 ![screenshot1](IMG/03-machine-create/01.png)  
-___
+___  
 ![screenshot2](IMG/03-machine-create/02.png)  
-___
+___  
 ![screenshot3](IMG/03-machine-create/03.png)  
 ***La quantité de mémoire allouée sera modulable par la suite...***  
-___
+___  
 ![screenshot4](IMG/03-machine-create/04.png)  
-***8Go c'est peut-être un peu léger...*** 
-___
+***8Go c'est peut-être un peu léger...***  
+___  
 ![screenshot5](IMG/03-machine-create/05.png)  
-___
+___  
 ![screenshot6](IMG/03-machine-create/06.png)  
-___
+___  
 ![screenshot7](IMG/03-machine-create/07.png)  
-___
+___  
 ![screenshot8](IMG/03-machine-create/08.png)  
 
 |             |             |               |
