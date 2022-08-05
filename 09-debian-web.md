@@ -48,24 +48,6 @@ ___
 `sudo systemctl restart apache2`  
 ___  
 
-### PHP 8.1.7 Compilation (Testing)  
-`su -`  
-`mkdir -p ~/COMPILATION/APACHE2`  
-`cd COMPILATION/APACHE2`  
-`wget https://dlcdn.apache.org/httpd/httpd-2.4.54.tar.gz`  
-`tar -xzf httpd-2.4.54.tar.gz`  
-`cd httpd-2.4.54/`  
-`sudo apt-get install libapr1-dev libaprutil1-dev libpcre3-dev pkg-config libxml2-dev sqlite3 libsqlite3-dev zlib1g-dev`  
-`./configure --enable-so`  
-`make`  
-`make install`  
-
-`wget https://www.php.net/distributions/php-8.1.7.tar.gz`  
-`tar -xzf php-8.1.7.tar.gz`  
-`cd PHP8.1.7`  
-`./configure --with-apxs2=/usr/local/apache2/bin/apxs --with-pdo-mysql`  
-___  
-
 ###  Apache 2  
 `sudo emacs -nw /etc/apache2/sites-available/000-Adminer.conf`  
 

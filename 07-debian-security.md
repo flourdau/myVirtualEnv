@@ -153,6 +153,7 @@ ___
     printf "\nUpdate! :)\n"
 
     exit 0
+
 `chmod 100 .upDate`  
 `sudo ~/.upDate`  
 `sudo shutdown -h 0`  
