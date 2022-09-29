@@ -110,7 +110,6 @@ ___
 
 #### Pensez à ajouter le port 8001 et ceux dont vous avez besoin dans iptables   
 `nano /etc/nftables.conf`  
-
 ___  
 
 ###	Pensez à exporter!  
@@ -119,26 +118,16 @@ ___
 ___  
 
 ##  Docker  
-### Engine  
+### Desktop  
+
 `sudo apt-get update`  
-`sudo apt-get install ca-certificates curl gnupg lsb-release`  
+`sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release`  
 `sudo mkdir -p /etc/apt/keyrings`  
 `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`  
-`echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.` `list.d/docker.list > /dev/null`  
-`sudo apt-get update`  
-`sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin`  
-___  
-
-## Docker compose  
-`wget https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64`  
-`chmod +x docker-compose-linux-x86_64`  
-`sudo mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose`  
-___  
-
-## Command Line completion  
-`cd /etc/bash_completion.d/`  
-`sudo curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose`  
-`source /etc/bash_completion.d/docker-compose`  
+`echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`  
+#### Download le dernier .deb...  
+`sudo apt-get install ~/Téléchargements/docker-desktop-4.12.0-amd64.deb`  
+#### Activez la VT-X?..  
 ___  
 
 #### Commandes utiles  

@@ -14,11 +14,11 @@
 ### Hôte :  
 
     Windows 10 Home 21H2
-    VirtualBox 6.1.36  
+    VirtualBox 6.1.38  
 
 ### Machine Virtuelle :
     
-    Debian 11
+    Debian 11.5
     1CPU
     4096Mo RAM
     NO-GUI ou GUI
