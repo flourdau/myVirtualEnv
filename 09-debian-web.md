@@ -103,7 +103,19 @@ ___
 
 ### Symfony  
 `wget https://get.symfony.com/cli/installer -O - | bash`  
+`export PATH="$HOME/.symfony5/bin:$PATH"`  
+`source ~/.nashrc`  
 `symfony check:requirements`  
+___  
+
+#### Pensez à ajouter le port 8001 et ceux dont vous avez besoin dans iptables   
+`nano /etc/nftables.conf`  
+
+___  
+
+###	Pensez à exporter!  
+`sudo shutdown -h 0`  
+![screenshot85](IMG/05-debian-install/85.png)  
 ___  
 
 ##  Docker  
