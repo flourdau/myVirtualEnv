@@ -82,6 +82,7 @@ __
     Subsystem       sftp    /usr/lib/openssh/sftp-server
     PermitRootLogin no
     AllowUsers USERNAME
+
 ***Préférez le port 22 car nftables bloque...***  
 ___  
 
@@ -92,6 +93,7 @@ ___
     enabled = true
     banaction = nftables-multiport
     banaction_allports = nftables-allports
+
 `sudo systemctrl restart fail2ban.service`  
 `fail2ban-client status`  
 ___  
@@ -108,6 +110,7 @@ ___
 	deb-src http://security.debian.org/debian-security bullseye-security main contrib
 	deb http://deb.debian.org/debian/ bullseye-updates main contrib
 	deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
+
 ___  
 
 ***On peut apparement rebrancher le câble....***  
@@ -137,6 +140,7 @@ ___
 
     PasswordAuthentication no
     UsePAM no
+
 `sudo systemctl restart sshd`  
 ___  
 
