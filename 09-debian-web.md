@@ -28,17 +28,40 @@ ___
 
 ### Server Web  
 `sudo tasksel`  
-![screenshot0](IMG/09-debian-web/00.png)  
+![screenshot0](IMG/09-debian-web/00.png) ___  
+
+### PHP 7.4   
 
 `sudo apt-get -y install nodejs libapache2-mod-php7.4 mariadb-server mariadb-client librabbitmq-dev composer php7.4 php7.4-{apcu,amqp,bcmath,bz2,common,cli,curl,dev,fpm,gd,intl,mbstring,mysql,opcache,readline,redis,xdebug,xml,yaml,zip}`  
 ___  
-
-###  PHP 7.4  
 `sudo a2enmod proxy_fcgi setenvif`  
 `sudo systemctl restart apache2`  
 `sudo a2enconf php7.4-fpm`  
 `sudo systemctl reload apache2`  
 `sudo emacs -nw /etc/php/7.4/apache2/php.ini`  
+
+    memory_limit = 512M
+    display_errors = On
+    post_max_size = 32M
+    upload_max_filesize = 64M
+
+`sudo systemctl restart apache2`  
+___  
+
+### PHP 8.1  
+####    Repo
+`sudo apt-get install ca-certificates apt-transport-https software-properties-common wget curl lsb-release -y`  
+`curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x`  
+`sudo apt update && sudo apt dist-upgrade`
+
+####    Install
+`sudo apt-get -y install nodejs libapache2-mod-php8.1 mariadb-server mariadb-client librabbitmq-dev composer php8.1 php8.1-{apcu,amqp,bcmath,bz2,common,cli,curl,dev,fpm,gd,intl,mbstring,mysql,opcache,readline,redis,xdebug,xml,yaml,zip}`  
+___  
+`sudo a2enmod proxy_fcgi setenvif`  
+`sudo systemctl restart apache2`  
+`sudo a2enconf php8.1-fpm`  
+`sudo systemctl reload apache2`  
+`sudo emacs -nw /etc/php/8.1/apache2/php.ini`  
 
     memory_limit = 512M
     display_errors = On
@@ -104,12 +127,12 @@ ___
 ### Symfony  
 `wget https://get.symfony.com/cli/installer -O - | bash`  
 `export PATH="$HOME/.symfony5/bin:$PATH"`  
-`source ~/.nashrc`  
+`source ~/.bashrc`  
 `symfony check:requirements`  
 ___  
 
 #### Pensez à ajouter le port 8001 et ceux dont vous avez besoin dans iptables   
-`nano /etc/nftables.conf`  
+`sudo nano /etc/nftables.conf`  
 ___  
 
 ###	Pensez à exporter!  
