@@ -55,7 +55,7 @@ ___
 `sudo apt update && sudo apt dist-upgrade`
 
 ####    Install
-`sudo apt-get -y install nodejs libapache2-mod-php8.1 mariadb-server mariadb-client librabbitmq-dev composer php8.1 php8.1-{apcu,amqp,bcmath,bz2,common,cli,curl,dev,fpm,gd,intl,mbstring,mysql,opcache,readline,redis,xdebug,xml,yaml,zip}`  
+`sudo apt-get -y install nodejs libapache2-mod-php8.1 mariadb-server mariadb-client librabbitmq-dev composer php8.1 php8.1-{apcu,amqp,bcmath,bz2,common,cli,curl,dev,fpm,gd,intl,mbstring,mysql,pgsql,opcache,readline,redis,xdebug,xml,yaml,zip}`  
 ___  
 `sudo a2enmod proxy_fcgi setenvif`  
 `sudo systemctl restart apache2`  
