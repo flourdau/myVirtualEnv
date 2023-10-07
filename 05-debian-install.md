@@ -1,8 +1,3 @@
-|             |             |               |
-| :---        |    :----:   |          ---: |
-| [Previous](04-machine-config.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](06-debian-config.md)   |
-|             |             |               |
-
 # DEBIAN-INSTALL  
 ![screenshotLogo](IMG/debian-logo.png)  
 ___  
@@ -185,7 +180,4 @@ ___
 ### 6. Pensez à exporter!  
 ![screenshot85](IMG/05-debian-install/85.png)  
 
-|             |             |               |
-| :---        |    :----:   |          ---: |
-| [Previous](04-machine-config.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](06-debian-config.md)   |
-|             |             |               |
+[Next](06-debian-config.md)

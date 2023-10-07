@@ -1,16 +1,10 @@
-
-|             |             |               |
-| :---        |    :----:   |          ---: |
-| [Previous](01-vbox-install.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](03-machine-create.md)   |
-|             |             |               |
-
 # VBOX-CONFIG
 ![screenshot0](IMG/vbox-logo.png)  
 ___  
 
 #### PRE-REQUIS:
 - Droits Administrateur Windows 10
-- [Extention Pack](https://download.virtualbox.org/virtualbox/6.1.26/Oracle_VM_VirtualBox_Extension_Pack-6.1.26.vbox-extpack)  
+- [Extention Pack](https://download.virtualbox.org/virtualbox/7.0.10/Oracle_VM_VirtualBox_Extension_Pack-7.0.10.vbox-extpack)  
 ___  
 
 ![screenshot1](IMG/02-vbox-config/00.png)  
@@ -23,7 +17,4 @@ ___
 ___  
 ![screenshot1](IMG/02-vbox-config/05.png)  
 
-|             |             |               |
-| :---        |    :----:   |          ---: |
-| [Previous](01-vbox-install.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](03-machine-create.md)   |
-|             |             |               |
+[Next](03-machine-create.md)

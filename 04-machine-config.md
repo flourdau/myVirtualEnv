@@ -1,8 +1,3 @@
-|             |             |               |
-| :---        |    :----:   |          ---: |
-| [Previous](03-machine-create.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](05-debian-install.md)   |
-|             |             |               |
-
 # MACHINE-CONFIG  
 ![screenshot0](IMG/vbox-logo.png)  
 ___  
@@ -25,7 +20,4 @@ ___
 ![screenshot5](IMG/04-machine-config/05.png)  
 ***Accés par pont & cable débranché pour le moment...***  
 
-|             |             |               |
-| :---        |    :----:   |          ---: |
-| [Previous](03-machine-create.md)     |-----------------------------------------------------------------------------------------------------------------------------| [Next](05-debian-install.md)   |
-|             |             |               |
+[Next](05-debian-install.md)

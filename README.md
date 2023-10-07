@@ -13,16 +13,16 @@
 
 ### Hôte :  
 
-    Windows 10 Home 21H2
-    VirtualBox 6.1.38  
+    Windows 10 Home 22H2
+    VirtualBox 7  
 
 ### Machine Virtuelle :
     
-    Debian 11.5
-    1CPU
+    Debian 12
+    2 CPU
     4096Mo RAM
     NO-GUI ou GUI
-    40 Go HDD
+    64Go HDD
 
 Si vous relevez des erreurs, fautes, abérations cosmiques...  
 ...merci de m'avertir pour corriger!  
