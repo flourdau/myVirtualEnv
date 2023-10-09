@@ -1,9 +1,5 @@
-
 # VBOX-INSTALL
-![screenshot0](IMG/vbox-logo.png)  
-___  
-
-#### PRE-REQUIS:
+## PRE-REQUIS:
 - Droits Administrateur Windows 10  
 ___  
 

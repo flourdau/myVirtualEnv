@@ -1,14 +1,11 @@
 #   DEBIAN-SECURITY  
-![screenshot0](IMG/debian-logo.png)  
-___  
-
-### Fail2Ban & Network-Manager  
+## Fail2Ban & Network-Manager  
 `su -`  
 ![screenshot00a](IMG/06-debian-config/00a.png)  
 ***Insérez l'ISO de Debian***  
 `apt-get install -y fail2ban network-manager`  
 
-### NFTABLES  
+## NFTABLES  
 `cp -Rpv /etc/nftables.conf /etc/nftables.conf.ORI`  
 `cp -Rpv /usr/share/doc/nftables/examples/workstation.nft /etc/nftables.conf`  
 `nano /etc/nftables.conf`  
@@ -46,7 +43,7 @@ ___
 `nft list ruleset`  
 ___  
 
-### Sudo  
+## Sudo  
 ***ATTENTION À BIEN REMPLACER USERNAME IP-ADDRESS & PORT***❗❗❗  
 `nano /etc/sudoers`  
 
@@ -63,7 +60,7 @@ ___
 ***Voilà... ...USERNAME possède les droits...***  
 __  
 
-### SSHD  
+## SSHD  
 `sudo tasksel`  
 ![screenshot00](IMG/07-debian-security/00.png)  
 `sudo nano /etc/ssh/sshd_config`  
@@ -81,7 +78,7 @@ __
 ***Préférez le port 22 car nftables bloque...***  
 ___  
 
-### Fail2Ban  
+## Fail2Ban  
 `sudo nano /etc/fail2ban/jail.d/defaults-debian.conf`  
 
     [sshd]
@@ -93,18 +90,15 @@ ___
 `fail2ban-client status`  
 ___  
 
-### APT  
+## APT  
 `nano /etc/apt/sources.list`  
 
 ***Commentez ou supprimez la ligne du CDROM Debian***  
 
     # deb cdrom:[...]
-	deb http://deb.debian.org/debian/ bullseye main
-	deb-src http://deb.debian.org/debian/ bullseye main
-	deb http://security.debian.org/debian-security bullseye-security main contrib
-	deb-src http://security.debian.org/debian-security bullseye-security main contrib
-	deb http://deb.debian.org/debian/ bullseye-updates main contrib
-	deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
+    deb http://deb.debian.org/debian bookworm main non-free-firmware
+    deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+    deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
 
 ___  
 
@@ -139,7 +133,7 @@ ___
 `sudo systemctl restart sshd`  
 ___  
 
-### UpDate!  
+## UpDate!  
 `nano ~/.upDate`  
 
     printf "\nBonjour! Nous somme le :\n"
@@ -158,7 +152,7 @@ ___
 `sudo shutdown -h 0`  
 ___  
 
-###	Pensez à exporter!  
+##	Pensez à exporter!  
 ![screenshot85](IMG/05-debian-install/85.png)  
 
 [Next](08-debian-GUI.md)

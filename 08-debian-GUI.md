@@ -1,7 +1,4 @@
 #   DEBIAN-TOOLS  
-![screenshot0](IMG/debian-logo.png)  
-___  
-
 ##  ⚠ OPTIONAL! ⚠  
 ___  
 

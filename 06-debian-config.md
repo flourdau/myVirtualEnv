@@ -1,8 +1,5 @@
 #   DEBIAN-CONFIG  
-![screenshot0](IMG/debian-logo.png)  
-___  
-
-### Dependances  
+## Dependances  
 `su -`  
 ![screenshot00a](IMG/06-debian-config/00a.png)  
 ***Insérez l'ISO de Debian***  
@@ -10,7 +7,7 @@ ___
 `eject`  
 ___  
 
-### Additions  
+## Additions  
 ***Cliquez sur :***  
 ![screenshot00](IMG/06-debian-config/00.png)  
 ___  
@@ -23,7 +20,7 @@ ___
 `sh /media/cdrom0/VBoxLinux*.run`  
 `eject`  
 
-### Dossiers partagés
+## Dossiers partagés
 ***ATTENTION À BIEN REMPLACER USERNAME***❗❗❗  
 `usermod -aG vboxsf USERNAME`  
 `shutdown -h 0`  
@@ -52,7 +49,7 @@ ___
 ***Ajoutez la ligne, attention aux tabulations!***  
 ___  
 
-###	Pensez à exporter!  
+##	Pensez à exporter!  
 
 ![screenshot85](IMG/05-debian-install/85.png)  
 

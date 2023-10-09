@@ -1,10 +1,7 @@
 # MACHINE-CONFIG  
-![screenshot0](IMG/vbox-logo.png)  
-___  
-
-#### PRE-REQUIS:  
+## PRE-REQUIS:  
 - Droits utilisateurs Windows 10  
-- Download le 1er ISO-DVD de [Debian 11](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/ "Debian 11")  
+- Download le 1er ISO-DVD de [Debian 12](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/ "Debian 12")  
 ___  
 
 ![screenshot2](IMG/04-machine-config/01.png)  

@@ -1,9 +1,7 @@
 # DEBIAN-INSTALL  
-![screenshotLogo](IMG/debian-logo.png)  
-___  
 ![screenshot00](IMG/05-debian-install/00.png)  
 ___  
-### 1. Paramètres de base  
+## 1. Paramètres de base  
 ![screenshot01](IMG/05-debian-install/01.png)  
 ___  
 ![screenshot02](IMG/05-debian-install/02.png)  
@@ -28,7 +26,7 @@ ___
 ___  
 ![screenshot10](IMG/05-debian-install/10.png)  
 ___  
-### 2. Gestion des partitions disque  
+## 2. Gestion des partitions disque  
 ***Création de 6 partions manuellement : boot, root, home, srv, tmp, var, swap***  
 ***Boot ne sera pas chiffrée, tandis que les autres le seront & feront parti d'un groupe de LVM***  
 ![screenshot11](IMG/05-debian-install/11.png)  
@@ -161,23 +159,23 @@ ___
 ___  
 ![screenshot75](IMG/05-debian-install/75.png)  
 ___  
-### 3. Gestion des paquets  
+## 3. Gestion des paquets  
 ![screenshot76](IMG/05-debian-install/76.png)  
 ___  
 ![screenshot77](IMG/05-debian-install/77.png)  
 ___  
 ![screenshot81](IMG/05-debian-install/81.png)  
 ___  
-### 4. Gestion des Logiciels  
+## 4. Gestion des Logiciels  
 ![screenshot82](IMG/05-debian-install/82.png)  
 ***On repassera par ici plus tard...***  
 ___  
-### 5. GRUB  
+## 5. GRUB  
 ![screenshot83](IMG/05-debian-install/83.png)  
 ___  
 ![screenshot84](IMG/05-debian-install/84.png)  
 ___  
-### 6. Pensez à exporter!  
+## 6. Pensez à exporter!  
 ![screenshot85](IMG/05-debian-install/85.png)  
 
 [Next](06-debian-config.md)

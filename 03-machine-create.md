@@ -1,8 +1,5 @@
 # MACHINE-CREATE  
-![screenshot0](IMG/vbox-logo.png)  
-___  
-
-#### PRE-REQUIS:  
+## PRE-REQUIS:  
 - Droits utilisateurs Windows 10  
 ___  
 
