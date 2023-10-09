@@ -4,7 +4,7 @@
 02. [Configuration](02-vbox-config.md)  
 03. [Création d'une Machine Virtuelle](03-machine-create.md)  
 04. [Configuration](04-machine-config.md)  
-05. [Installation de Debian 11](05-debian-install.md)  
+05. [Installation de Debian 12](05-debian-install.md)  
 06. [Configuration](06-debian-config.md)  
 07. [Securité](07-debian-security.md)  
 08. [Graphical User Interface](08-debian-GUI.md)  
