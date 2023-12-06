@@ -15,7 +15,7 @@
 ### 👋 Hello World! 🌍
 Si vous souhaitez installer ou virtualiser [Debian], je partage [mes notes]. :)
 
-Durant mes formations, j’ai construit mon environnement de développement personnalisé en utilisant [VirtualBox]. Pour travailler avec Linux, plus précisément [Debian], tout en conservant un système d’exploitation Windows 10 plus orienté multimédia.  
+Durant mes formations, j’ai construit mon environnement de développement personnalisé en utilisant [VirtualBox], pour travailler avec Linux, plus précisément [Debian], tout en conservant un système d’exploitation Windows 10 plus orienté multimédia.  
 
 Malgré l’émergence de nouvelles technologies (CodeSpaces de GitHub, CodePen, etc.), j’ai continué la virtualisation pour plusieurs raisons :
 
