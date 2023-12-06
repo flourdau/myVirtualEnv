@@ -47,7 +47,7 @@ ___
 
 ***'Ouvrir le fichier JSON'***  
 ***Ajoutez le bloc dans*** _profiles->list_  
-***& remplacez les champs*** _commandline, background, ico_  
+***& remplacez les champs***guid, commandline, backgroundImage, icon  
 
     {
         "guid": "{58ad8b0c-3ef4-5f4a-sc6f-43e789f2544}",
