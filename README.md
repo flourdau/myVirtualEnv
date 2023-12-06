@@ -54,7 +54,10 @@ Si vous remarquez des erreurs ou des pratiques discutables, n’hésitez pas à 
     NO-GUI ou GUI
     64Go HDD
 
-[Debian]: https://www.debian.org
-[mes notes]: https://flourdau.github.io/VirtualServer/
-[VirtualBox]: https://www.virtualbox.org
-[partie 5]: 05-debian-install.md
+[Next]  
+
+[Next]:01-vbox-install.md
+[Debian]:https://www.debian.org
+[mes notes]:https://flourdau.github.io/VirtualServer/
+[VirtualBox]:https://www.virtualbox.org
+[partie 5]:05-debian-install.md
