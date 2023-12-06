@@ -13,9 +13,9 @@
 
 
 ### 👋 Hello World! 🌍
-Si vous souhaitez installer ou virtualiser [Debian], je partage [mes notes]. :)
+Si vous souhaitez installer ou virtualiser [Debian](https://www.debian.org), je partage [mes notes](https://flourdau.github.io/VirtualServer/). :)
 
-Durant mes formations, j’ai construit mon environnement de développement personnalisé en utilisant [VirtualBox], pour travailler avec Linux, plus précisément [Debian], tout en conservant un système d’exploitation Windows 10 plus orienté multimédia.  
+Durant mes formations, j’ai construit mon environnement de développement personnalisé en utilisant [VirtualBox](https://www.virtualbox.org), pour travailler avec Linux, plus précisément [Debian](https://www.debian.org), tout en conservant un système d’exploitation Windows 10 plus orienté multimédia.  
 
 Malgré l’émergence de nouvelles technologies (CodeSpaces de GitHub, CodePen, etc.), j’ai continué la virtualisation pour plusieurs raisons :
 
@@ -35,9 +35,9 @@ En suivant cette procédure, il vous faudra un peu de temps, de patience & quelq
 
 Je vous invite à découvrir par vous-même ici : [https://flourdau.github.io/VirtualServer/]
 
-Pour installer directement Debian comme machine hôte, passez directement à la [partie 5].
+Pour installer directement Debian comme machine hôte, passez directement à la [partie 5](05-debian-install.md).  
 
-Si vous remarquez des erreurs ou des pratiques discutables, n’hésitez pas à me le signaler. Je me ferai un plaisir d'améliorer/corriger cela.
+Si vous remarquez des erreurs ou des pratiques discutables, n’hésitez pas à me le signaler. Je me ferai un plaisir d'améliorer/corriger cela.  
 
 #VirtualBox #Debian  
 
@@ -54,10 +54,4 @@ Si vous remarquez des erreurs ou des pratiques discutables, n’hésitez pas à 
     NO-GUI ou GUI
     64Go HDD
 
-[Next]  
-
-[Next]:01-vbox-install.md
-[Debian]:https://www.debian.org
-[mes notes]:https://flourdau.github.io/VirtualServer/
-[VirtualBox]:https://www.virtualbox.org
-[partie 5]:05-debian-install.md
+[Next](01-vbox-install.md)
