@@ -33,7 +33,7 @@ Pour ce faire, j’ai utilisé un langage très simple : le markdown. Et pour pa
 
 En suivant cette procédure, il vous faudra un peu de temps, de patience & quelques connaissances de base, mais j’ai fait de mon mieux pour simplifier le processus au maximum, de faire en sorte que ce soit le plus accessible, adaptez-vous selon vos besoins. L'abus du copier/coller est recommandé.
 
-Je vous invite à découvrir par vous-même ici : [https://flourdau.github.io/VirtualServer/]
+Je vous invite à découvrir par vous-même ici : [https://flourdau.github.io/VirtualServer/](https://flourdau.github.io/VirtualServer/)
 
 Pour installer directement Debian comme machine hôte, passez directement à la [partie 5](05-debian-install.md).  
 
