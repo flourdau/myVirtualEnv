@@ -11,37 +11,33 @@
 09. [Web](09-debian-web.md)  
 10. [Fun](10-debian-fun.md)  
 
+## 👋 Hello World! 🌍
+Si vous souhaitez installer [Debian](https://www.debian.org) 💗 avec ou sans utiliser [VirtualBox](https://www.virtualbox.org), que ce soit pour découvrir le système d'exploitation, bidouiller, surfer, déployer un environnement de développement ou même un server TOR... Je centralise & partage [mes notes ici](https://flourdau.github.io/VirtualServer/).  
 
-### 👋 Hello World! 🌍
-Si vous souhaitez installer ou virtualiser [Debian](https://www.debian.org), je partage [mes notes](https://flourdau.github.io/VirtualServer/). :)
+👨‍💻 Aujourd'hui, je continue toujours avec la virtualisation pour construire mon environnement de développement car:
+- La machine hôte reste 'hermétique' & 'propre'.
+- Clonage, sauvegarde, relance rapide & facile de l’état.
+- Contrôle des droits utilisateurs.
+- Stabilité, Performance...
 
-Durant mes formations, j’ai construit mon environnement de développement personnalisé en utilisant [VirtualBox](https://www.virtualbox.org), pour travailler avec Linux, plus précisément [Debian](https://www.debian.org), tout en conservant un système d’exploitation Windows 10 plus orienté multimédia.  
+😴 Certes, la mise en place peut être longue,.. nécessite une capacité de stockage & de performance importante,.. mais ces inconvénients & il y en a d'autres,.. ne m’ont pas dissuadé.  
 
-Malgré l’émergence de nouvelles technologies (CodeSpaces de GitHub, CodePen, etc.), j’ai continué la virtualisation pour plusieurs raisons :
+💪 Au fil des galères, j’ai pris des notes sur les procédures d’installation & de configuration pour ensuite les organiser, compléter, formater & finalement les partager simplement afin de gagner du temps.⏱  
 
-- Contrôle total de la machine, des droits...
-- Ajustement de la puissance en fonction de la machine hôte.
-- Clonage rapide, sauvegarde et relance rapide de l’état de la machine virtuelle.
-- Pas besoin d'être connecté
+📋 L'abus du copier/coller est recommandé.   
+Bref, adaptez-vous selon vos besoins.  
 
-Certes, la mise en place peut être longue et nécessite une capacité de stockage importante, mais ces inconvénients ne m’ont pas dissuadé de continuer avec la virtualisation.  
+💬 Si vous remarquez des erreurs ou des pratiques discutables,..  
+Ou simplement des améliorations! N’hésitez pas à faire remonter.  
+Je me ferai un plaisir de faire évoluer le prôjet.   
 
-
-Au fil des installations, j’ai pris des notes sur les processus d’installation des différents composants (pare-feu, ssh, serveur web, PHP, bases de données, GUI, éditeurs de code…). J’ai ensuite organisé et formaté ces notes pour les partager facilement.
-
-Pour ce faire, j’ai utilisé un langage très simple : le markdown. Et pour partager ces notes, j’ai trouvé en GitHub la solution idéale. En effet, GitHub comprend le langage markdown et permet de créer très facilement un site statique.
-
-En suivant cette procédure, il vous faudra un peu de temps, de patience & quelques connaissances de base, mais j’ai fait de mon mieux pour simplifier le processus au maximum, de faire en sorte que ce soit le plus accessible, adaptez-vous selon vos besoins. L'abus du copier/coller est recommandé.
-
-Je vous invite à découvrir par vous-même ici : [https://flourdau.github.io/VirtualServer/](https://flourdau.github.io/VirtualServer/)
-
-Pour installer directement Debian comme machine hôte, passez directement à la [partie 5](05-debian-install.md).  
-
-Si vous remarquez des erreurs ou des pratiques discutables, n’hésitez pas à me le signaler. Je me ferai un plaisir d'améliorer/corriger cela.  
+🤖
 
 #VirtualBox #Debian  
 
-### Hôte :  
+[https://flourdau.github.io/VirtualServer/](https://flourdau.github.io/VirtualServer/)
+
+### Machine Hôte :  
 
     Windows 10 Home 22H2
     VirtualBox 7  
