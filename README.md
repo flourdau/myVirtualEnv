@@ -27,7 +27,7 @@
 Si vous souhaitez installer [Debian](https://www.debian.org) 💗 avec ou sans utiliser [VirtualBox](https://www.virtualbox.org), juste pour découvrir le système d'exploitation, bidouiller, déployer un environnement de développement ou même un server TOR...  
 Je centralise & partage [mes notes ici](https://flourdau.github.io/myVirtualEnv/).  
 
-👨‍💻 Aujourd'hui, je continue toujours avec la virtualisation pour construire mon environnement de développement.  
+👨‍💻 Je continue toujours avec la virtualisation pour construire mon environnement de développement.  
 Plusieurs raisons:
 - La machine hôte reste 'hermétique' & 'propre'.
 - Clonage, sauvegarde, relance rapide & facile de l’état.
