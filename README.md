@@ -1,4 +1,3 @@
-#   VIRTUALSERVER
 ##  Sommaire :
 01. [Installation de VirtualBox](01-vbox-install.md)  
 02. [Configuration](02-vbox-config.md)  
@@ -11,8 +10,20 @@
 09. [Web](09-debian-web.md)  
 10. [Fun](10-debian-fun.md)  
 
+
+### Machine Hôte:
+    Windows 10 Home 22H2
+    VirtualBox 7  
+
+### Machine Virtuelle:
+    Debian 12
+    2 CPU
+    4096Mo RAM
+    NO-GUI ou GUI
+    64Go HDD
+
 ## 👋 Hello World! 🌍
-Si vous souhaitez installer [Debian](https://www.debian.org) 💗 avec ou sans utiliser [VirtualBox](https://www.virtualbox.org), que ce soit pour découvrir le système d'exploitation, bidouiller, surfer, déployer un environnement de développement ou même un server TOR... Je centralise & partage [mes notes ici](https://flourdau.github.io/VirtualServer/).  
+Si vous souhaitez installer [Debian](https://www.debian.org) 💗 avec ou sans utiliser [VirtualBox](https://www.virtualbox.org), juste pour découvrir le système d'exploitation, bidouiller, surfer, déployer un environnement de développement ou même un server TOR... Je centralise & partage [mes notes ici](https://flourdau.github.io/VirtualServer/).  
 
 👨‍💻 Aujourd'hui, je continue toujours avec la virtualisation pour construire mon environnement de développement car:
 - La machine hôte reste 'hermétique' & 'propre'.
@@ -24,30 +35,20 @@ Si vous souhaitez installer [Debian](https://www.debian.org) 💗 avec ou sans u
 
 💪 Au fil des galères, j’ai pris des notes sur les procédures d’installation & de configuration pour ensuite les organiser, compléter, formater & finalement les partager simplement afin de gagner du temps.⏱  
 
-📋 L'abus du copier/coller est recommandé.   
+📋 L'abus du copier/coller, triple clics,.. est recommandé.   
 Bref, adaptez-vous selon vos besoins.  
 
 💬 Si vous remarquez des erreurs ou des pratiques discutables,..  
 Ou simplement des améliorations! N’hésitez pas à faire remonter.  
 Je me ferai un plaisir de faire évoluer le prôjet.   
 
+![screenshot0](IMG/10-debian-fun/00.png)  
+
 🤖
 
-#VirtualBox #Debian  
+#VirtualBox #Debian   
 
 [https://flourdau.github.io/VirtualServer/](https://flourdau.github.io/VirtualServer/)
 
-### Machine Hôte :  
-
-    Windows 10 Home 22H2
-    VirtualBox 7  
-
-### Machine Virtuelle :
-    
-    Debian 12
-    2 CPU
-    4096Mo RAM
-    NO-GUI ou GUI
-    64Go HDD
-
+___
 [Next](01-vbox-install.md)
