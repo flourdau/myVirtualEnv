@@ -23,7 +23,7 @@
     64Go HDD
 
 ## 👋 Hello World! 🌍
-Si vous souhaitez installer [Debian](https://www.debian.org) 💗 avec ou sans utiliser [VirtualBox](https://www.virtualbox.org), juste pour découvrir le système d'exploitation, bidouiller, surfer, déployer un environnement de développement ou même un server TOR... Je centralise & partage [mes notes ici](https://flourdau.github.io/VirtualServer/).  
+Si vous souhaitez installer [Debian](https://www.debian.org) 💗 avec ou sans utiliser [VirtualBox](https://www.virtualbox.org), juste pour découvrir le système d'exploitation, bidouiller, surfer, déployer un environnement de développement ou même un server TOR... Je centralise & partage [mes notes ici](https://flourdau.github.io/myVirtualEnv/).  
 
 👨‍💻 Aujourd'hui, je continue toujours avec la virtualisation pour construire mon environnement de développement car:
 - La machine hôte reste 'hermétique' & 'propre'.
@@ -48,7 +48,7 @@ Je me ferai un plaisir de faire évoluer le prôjet.
 
 #VirtualBox #Debian   
 
-[https://flourdau.github.io/VirtualServer/](https://flourdau.github.io/VirtualServer/)
+[https://flourdau.github.io/myVirtualEnv/](https://flourdau.github.io/myVirtualEnv/)
 
 ___
 [Next](01-vbox-install.md)
