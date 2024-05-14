@@ -34,6 +34,7 @@ ___
       #  #    # #  # #  #    # #     
     ##   ###  # #   #   ###  # #   #                            
 
+ou custom: https://github.com/ar51an/raspberrypi-motd/blob/main/README.md
 ___  
 
 ## Cmatrix  
@@ -42,7 +43,7 @@ ___
 
 ## Terminal Windows 10  
 ***Installez l'application Terminal depuis le Store de Windows puis dans Paramètre***  
-
+https://www.microsoft.com/store/productId/9N0DX20HK701
 ![screenshot01](IMG/10-debian-fun/01.png)  
 
 ***'Ouvrir le fichier JSON'***  
