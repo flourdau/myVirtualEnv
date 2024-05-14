@@ -43,7 +43,7 @@ ___
 ___  
 
 ## Terminal Windows 10  
-***Installez l'application [Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) depuis le Store de Windows puis dans Paramètre***  
+***Installez l'application [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=fr-fr&gl=FR) depuis le Store de Windows puis dans Paramètre***  
 
 ![screenshot01](IMG/10-debian-fun/01.png)  
 
